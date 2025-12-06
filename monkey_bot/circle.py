@@ -21,6 +21,9 @@ def make_small_circle():
         arduino.write(b"0,0\n")
         print("Stopped the motors.")
         arduino.close()
-
+def forward():
+    arduino.write(b"50,50\n")  # Both motors forward
+    time.sleep(4)
+    arduino.write(b"0,0\n")      # Stop
 # Start making the small circle
 make_small_circle()
