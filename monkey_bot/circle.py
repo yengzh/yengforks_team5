@@ -26,4 +26,5 @@ def forward():
     time.sleep(4)
     arduino.write(b"0,0\n")      # Stop
 # Start making the small circle
-make_small_circle()
+# make_small_circle()
+forward()
